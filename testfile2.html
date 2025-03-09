@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        /* Custom styles */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Page Content -->
+<div class="w3-content" style="max-width: 1564px; margin-top: 32px;">
+
+    <!-- Projects Header -->
+    <div id="projects" class="w3-container w3-padding-32">
+        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Marine Animal Profiles</h2>
+    </div>
+
+    <!-- Cards Grid Container -->
+    <div class="card-container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-text">Orca</div>
+            <img src="https://i.pinimg.com/736x/69/02/80/690280cecec8e31aa8f5705344b5a74a.jpg" alt="Orca">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-text">Blue Whale</div>
+            <img src="https://i.pinimg.com/736x/a3/ed/57/a3ed57d84f05e7c6e8f4f93e6009635f.jpg" alt="Blue Whale">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-text">Humpback Whale</div>
+            <img src="https://originaldiving.d3r.site/images/blog_gallery/554980-istock-1164887104body.jpg" alt="Humpback Whale">
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-text">Grey Whale</div>
+            <img src="https://www.ikelite.com/cdn/shop/articles/glenn-ostle-moorea-cover.jpg?v=1638397422&width=1500" alt="Grey Whale">
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="card-text">Sperm Whale</div>
+            <img src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_1024,h_683,c_fit/quark-web/2024/09/AdobeStock_501020951-1.jpeg" alt="Sperm Whale">
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <div class="card-text">Beluga Whale</div>
+            <img src="https://static.wikia.nocookie.net/captivebelugas/images/9/9a/Aurora.JPG/revision/latest?cb=20230824144523" alt="Beluga Whale">
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <div class="card-text">Narwhal</div>
+            <img src="https://www.thebeaverton.com/wp-content/uploads/2019/12/Narwhal_RL.jpg" alt="Narwhal">
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <div class="card-text">Fin Whale</div>
+            <img src="https://friendsofanimals.org/wp-content/uploads/2024/02/whaleweb.png" alt="Fin Whale">
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+            <div class="card-text">Bowhead Whale</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSx1Enz42WTV17IgYhXDbSweWhSiBgkd8uYA&s" alt="Bowhead Whale">
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+            <div class="card-text">Harbor Seal</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUsu9NdK7n05KMtnbGLmIpkkfF-L9HgTqZA&s" alt="Harbor Seal">
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+            <div class="card-text">Elephant Seal</div>
+            <img src="https://www.fisheries.noaa.gov/s3//styles/full_width/s3/dam-migration/750x500-northern-elephant-seals.png?itok=nlcRo6lX" alt="Elephant Seal">
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+            <div class="card-text">Manatee</div>
+            <img src="https://www.treehugger.com/thmb/_BL-0-39uBvVWB-RitnArqlD2vY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/manatee.primary-e6d6754efdc94e5bb635af7a5f456ca1.jpg" alt="Manatee">
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card">
+            <div class="card-text">Sea Otter</div>
+            <img src="https://d3ftabzjnxfdg6.cloudfront.net/app/uploads/2020/05/18-10-28_0002-sea-otter-BB-web-1024x512.jpg" alt="Sea Otter">
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card">
+            <div class="card-text">Polar Bear</div>
+            <img src="https://epicchq.com/wp-content/uploads/2024/11/polar-bear-waving.jpg" alt="Polar Bear">
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card">
+            <div class="card-text">Sei Whale</div>
+            <img src="https://files.worldwildlife.org/wwfcmsprod/images/07.02.2012.Species.SeiWhale.hero/hero_small/658tkavct1_HI_257682.jpg" alt="Sei Whale">
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card">
+            <div class="card-text">Minke Whale</div>
+            <img src="https://www.eopugetsound.org/sites/default/files/topical_article/images/Lunge%20Feeding%20minke%20-%20Matt%20Stolmeier-Outer%20Island%20Expeditions_crpt.jpg" alt="Minke Whale">
+        </div>
+
+        <!-- Card 17 -->
+        <div class="card">
+            <div class="card-text">Vaquita</div>
+            <img src="https://images.squarespace-cdn.com/content/v1/647a620fe187101200782639/f0541411-a9d6-4a11-9a02-8bcbc5808ca5/Vaquitalighter.jpeg" alt="Vaquita">
+        </div>
+
+        <!-- Card 18 -->
+        <div class="card">
+            <div class="card-text">Amazon River Dolphin</div>
+            <img src="https://www.animalspot.net/wp-content/uploads/2016/04/Pink-Amazon-River-Dolphin-Pictures.jpg" alt="Amazon River Dolphin">
+        </div>
+
+        <!-- Card 19 -->
+        <div class="card">
+            <div class="card-text">Indus River Dolphin</div>
+            <img src="https://www.scidev.net/asia-pacific/wp-content/uploads/sites/4/2019/09/16-996x567.jpg" alt="Indus River Dolphin">
+        </div>
+
+        <!-- Card 20 -->
+        <div class="card">
+            <div class="card-text">Southern Right Whale</div>
+            <img src="https://images.nzgeo.com/2009/09/99_SouthernWhale_01-1-2000x1329.jpg" alt="Southern Right Whale">
+        </div>
+
+        <!-- Card 21 -->
+        <div class="card">
+            <div class="card-text">Dugong</div>
+            <img src="https://files.worldwildlife.org/wwfcmsprod/images/Dugong_swimming/hero_small/2g601hto8u_Medium_WW1221.jpg" alt="Dugong">
+        </div>
+
+        <!-- Card 22 -->
+        <div class="card">
+            <div class="card-text">West Indian Manatee</div>
+            <img src="https://static1.squarespace.com/static/5363b540e4b054843f9bf812/53763591e4b075c0a1176a58/565cc591e4b0702d380e7e96/1734444555079/?format=1500w" alt="West Indian Manatee">
+        </div>
+
+
+        <div class="card">
+              <div class="card-text"> manatee monk seal </div>
+              <img src="https://critter.science/wp-content/uploads/2021/09/mms1a.png" alt="monk">
+          </div>
+
+
+        <!-- Card 24 -->
+        <div class="card">
+            <div class="card-text">south asian river dolphin</div>
+            <img src="https://us.whales.org/wp-content/uploads/sites/2/2019/05/south-asian-river-dolphin-udayan-borthakur.jpg" alt="Common Dolphin">
+        </div>
+<!-- Card 25 -->
+        <div class="card">
+            
+              <div class="card-text"> Hectors dolphin </div>
+              <img src="https://www.doc.govt.nz/thumbs/hero/contentassets/161c8f6b8e11462fa97419215d6f9d85/hectors-dolphin-1920.jpg" alt="hector">
+            </div>
+        
+
+
+          <!-- Card 26 -->
+          <div class="card">
+              <div class="card-text"> commersons dolphin  </div>
+              <img src="https://aquatica.com/orlando/-/media/migrated-media/aquatica-orlando/images/tours/commersons-closeup/714x320-apo-commersons-dolphins-closeup.jpg?h=320&w=714&la=en&hash=7553DE01C5AE5D0A96CE591E71C9E8A2" alt="commersons">
+            </div>
+        
+          <!-- Card 27 -->
+          <div class="card">
+            
+              <div class="card-text"> Guadalupe Fur Seal</div>
+              <img src="https://www.marinemammalcenter.org/storage/app/uploads/public/70a/26b/aa0/thumb__2400_0_0_0_auto.jpg" alt="guadalupe">
+            </div>
+        
+
+          <!-- Card 28 -->
+          <div class="card">
+            
+              <div class="card-text"> Hawaiian Monk Seal </div>
+              <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2023-07/230725-endangered-pup-seal-death-ac-759p-fa72b7.jpg" alt="Hawaiian">
+            </div>
+          
+          <!-- Card 29 -->
+          <div class="card">
+            
+              <div class="card-text"> South American Sea Lion </div>
+              <img src="https://s3.animalia.bio/animals/photos/full/1.25x1/south-american-sea-lion.webp?id=ad02a9ce3d29112e44f34d21fb93f93a" alt="american" >
+            </div>
+          
+        <!-- Card 30 -->
+          <div class="card">
+            
+              <div class="card-text"> Chilean Dolphin </div>
+              <img src="https://static.wikia.nocookie.net/naturerules1/images/6/69/Chilean_Dolphin.jpg/revision/latest?cb=20220501012956" alt="Chilean Dolphin" >
+        
+            </div>
+        
+
+    </div> <!-- End of card-container -->
+
+</div> <!-- End of w3-content -->
+
+</body>
+</html>
